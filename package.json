@@ -1,0 +1,104 @@
+{
+	"publisher": "sebastianharris4",
+  	"name": "helloworld",
+	"displayName": "HelloWorld",
+	"description": "mr world wide mr 305",
+	"version": "0.0.1",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "helloworld.helloWorld",
+				"title": "Hello World",
+				"key": "ctrl+f1",
+				"mac": "cmd+f1",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "helloworld.bad",
+				"title": "Not cool",
+				"key": "ctrl+f2",
+				"mac": "cmd+f2",
+				"when": "editorTextFocus"
+			}			
+		],
+		"snippets": [
+			{
+			"language": "python",
+			"path": "./snippets/python.json"
+			},
+			{
+			"language": "python",
+			"path": "./snippets/pythonfun.json"
+			},
+			{
+			"language": "python",
+			"path": "./snippets/pythonp.json"
+			},
+			{
+			"language": "python",
+			"path": "./snippets/pythoninp.json"
+			},
+			{
+			"language": "python",
+			"path": "./snippets/pythonininp.json"
+			},
+			{
+				"language": "python",
+				"path": "./snippets/pythonfunforp.json"
+			}
+		],
+		"viewsContainers": {
+			"activitybar": [
+			  {
+				"id": "gangsta",
+				"title": "Gangsta chad",
+				"icon": "images/451px-Human_body_silhouette.svg.png"
+			  }
+			]
+		  },
+		  "views": {
+			"gangsta": [
+			  {
+				"id": "package-dependencies",
+				"name": "very cool"
+				
+			  },
+			  {
+				"id": "mega chad",
+				"name": "Outline momment amirite"
+			  }
+			],
+			"test": [
+				{
+					"id": "mocha",
+					"name": "mocha"
+				}
+			]
+		  }
+	},
+
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.32.0",
+		"@typescript-eslint/eslint-plugin": "^4.16.0",
+		"@typescript-eslint/parser": "^4.16.0",
+		"eslint": "^7.21.0",
+		"typescript": "^4.3.5"
+	}
+}

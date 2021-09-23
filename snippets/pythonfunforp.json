@@ -1,0 +1,11 @@
+{
+    "Python function for loop and print statement for the price of 1": {
+        "prefix": "!funforp",
+            "body": [
+            "def functionname(num):",
+            "   for i in range (num):",
+            "       print('$1')",
+            "functionname($2)"
+        ]
+    }
+}

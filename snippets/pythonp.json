@@ -1,0 +1,8 @@
+{
+    "Python print statement": {
+        "prefix": "!p",
+            "body": [
+            "print('$1')"
+        ]
+    }
+}

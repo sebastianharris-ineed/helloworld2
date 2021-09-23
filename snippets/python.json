@@ -1,0 +1,9 @@
+{
+    "For look template": {
+        "prefix": "!for",
+            "body": [
+            "for i in range (num):",
+            "   $1"
+        ]
+    }
+}

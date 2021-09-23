@@ -1,0 +1,8 @@
+{
+    "Python int input statement": {
+        "prefix": "!intinp",
+            "body": [
+            "varname = int(input('$1'))"
+        ]
+    }
+}

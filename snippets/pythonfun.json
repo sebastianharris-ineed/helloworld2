@@ -1,0 +1,10 @@
+{
+    "Python function template": {
+        "prefix": "!fun",
+            "body": [
+            "def functionname():",
+            "   $1",
+            "functionname()"
+        ]
+    }
+}
